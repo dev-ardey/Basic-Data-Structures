@@ -1,0 +1,31 @@
+// function quickCheck(arr, elem) {
+//   // Only change code below this line
+//   if (arr.indexOf(elem) === true) {
+//     return "true";
+//   }
+//   else if (arr.indexOf(elem) === false) {
+//     return "false";
+//   }
+//   // Only change code above this line
+// }
+
+// console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+// console.log(quickCheck(['squash', 'onions', 'shallots'], 'onions'));
+
+
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  if (arr.indexOf(elem) >= 0) {
+    return true;
+  }
+  else if (arr.indexOf(elem) <= 0) {
+    return false;
+  }
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'onions'));
+console.log(quickCheck(['onions', 'squash', 'shallots'], 'onions'));
+
+
